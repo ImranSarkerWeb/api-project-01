@@ -37,8 +37,15 @@ function dispalyData(datas) {
       <div class="card-body">
           <h5 class="card-title">${data.strMeal}</h5>
           <p class="card-text ">${data.strInstructions.substring(0,300)}...</p>
+          <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+          Details
+        </button>
+        </div>
       </div>
+     
   </div>
+  
   `;
   cardContainer.appendChild(div)
  }
